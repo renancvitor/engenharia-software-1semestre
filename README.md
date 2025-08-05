@@ -55,4 +55,4 @@ engenharia-software-2semestre/
 
 ## ⚡ Acesso rápido
 
-- [`introducao-programacao-computadores/`](./introducao-programacao-computadores)
+- [`01-introducao-programacao-computadores/`](./01-introducao-programacao-computadores)
