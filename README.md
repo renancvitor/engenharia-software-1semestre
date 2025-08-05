@@ -55,4 +55,4 @@ engenharia-software-2semestre/
 
 ## ⚡ Acesso rápido
 
-- [`Introdução à Programação de Computadores`](./01-introducao-programacao-computadores/01-super-triunfo-fundamentos-tecnicas/)
+- [`Introdução à Programação de Computadores`](./01-introducao-programacao-computadores/)
