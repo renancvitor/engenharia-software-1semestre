@@ -37,16 +37,19 @@ Organizados por aulas, exercícios e projetos.
 
 ```plaintext
 engenharia-software-2semestre/
-├── introducao-programacao-computadores/
-│   ├── super-triunfo-fundamentos-tecnicas/
-│   │   └── aula1-olamundo.c
-│   ├── super-triunfo-desenvolvendo-logica/
-│   ├── xadrez-movimentacao-pecas/
-│   └── batalha-naval/
-├── arquitetura-computadores/
-├── requisitos-sistema/
-├── html5-css-javascript-php/
-├── paradigmas-linguagem-programacao-python/
+├── 01-introducao-programacao-computadores/
+│   ├── 01-super-triunfo-fundamentos-tecnicas/
+│   │   ├── aula1-olamundo.c
+│   │   ├── aula2-variaveis.c
+│   │   ├── aula3-input_output_dados.c
+│   │   └── aula4-hora_de_codar.c
+│   ├── 02-super-triunfo-desenvolvendo-logica/
+│   ├── 03-xadrez-movimentacao-pecas/
+│   └── 04-batalha-naval/
+├── 02-arquitetura-computadores/
+├── 03-requisitos-sistema/
+├── 04-html5-css-javascript-php/
+├── 05-paradigmas-linguagem-programacao-python/
 └── README.md
 ```
 
