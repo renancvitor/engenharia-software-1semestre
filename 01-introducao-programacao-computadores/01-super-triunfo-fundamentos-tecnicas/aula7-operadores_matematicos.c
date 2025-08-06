@@ -5,7 +5,7 @@ int main() {
     int numero1, numero2;
     int soma, subtracao, multiplicacao, divisao;
 
-    /*printf("Entre com o número1:  ");
+    printf("Entre com o número1:  ");
     scanf("%d", &numero1);
 
     printf("\nEntre com o número2:  ");
@@ -48,7 +48,7 @@ int main() {
 
     printf("Antes decremento = %d\n", numeroII);
     numeroII--;
-    printf("\nDepois decremento = %d\n", numeroII);*/
+    printf("\nDepois decremento = %d\n", numeroII);
 
     int numeroUno = 1, resultadoUno;
 
@@ -67,4 +67,6 @@ int main() {
 
     resultadoUno = --numeroUno;
     printf("Após Pré-decremento - Número Uno: %d - Resultado: %d\n", numeroUno, resultadoUno);
+
+    return 0;
 }
