@@ -42,7 +42,8 @@ engenharia-software-2semestre/
 │   │   ├── aula1-olamundo.c
 │   │   ├── aula2-variaveis.c
 │   │   ├── aula3-input_output_dados.c
-│   │   └── aula4-hora_de_codar.c
+│   │   ├── aula4-hora_de_codar.c
+│   │   └── aula5-desafio_novato.c
 │   ├── 02-super-triunfo-desenvolvendo-logica/
 │   ├── 03-xadrez-movimentacao-pecas/
 │   └── 04-batalha-naval/
