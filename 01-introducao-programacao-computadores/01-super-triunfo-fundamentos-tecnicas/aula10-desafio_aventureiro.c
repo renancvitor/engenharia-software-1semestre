@@ -7,9 +7,6 @@ unsigned long int populacao, populacao2;
 int numeroPontosTuristicos, numeroPontosTuristicos2;
 double area, pib, area2, pib2, pibPerCapta, pibPerCapta2, densidadePopulacional, densidadePopulacional2;
 
-char estadoStr[10], populacaoStr[20], areaStr[20], pibStr[20], pontosStr[20];
-char estadoStr2[10], populacaoStr2[20], areaStr2[20], pibStr2[20], pontosStr2[20];
-
 void readLine(char *buffer, int size)
 {
     if (fgets(buffer, size, stdin))
@@ -20,6 +17,9 @@ void readLine(char *buffer, int size)
 
 void entradaDados()
 {
+    char estadoStr[10], populacaoStr[20], areaStr[20], pibStr[20], pontosStr[20];
+    char estadoStr2[10], populacaoStr2[20], areaStr2[20], pibStr2[20], pontosStr2[20];
+
     printf("\nDigite abaixo os dados da primeira carta:");
 
     printf("\nEstado: ");
@@ -76,27 +76,59 @@ void entradaDados()
     readLine(pontosStr2, sizeof(pontosStr2));
     sscanf(pontosStr2, "%d", &numeroPontosTuristicos2);
 
-    printf("\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
+    printf("\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n");
 }
 
 double calcularDensidadePopulacional()
 {
-    return (double)populacao / area;
+    if (area != 0 && populacao != 0)
+    {
+        return (double)populacao / area;
+    }
+    else
+    {
+        printf("O valor de área e população não pode ser zero!");
+        return 0.0;
+    }
 }
 
 double calcularPibPerCapta()
 {
-    return (pib * 1e9) / (double)populacao;
+    if (pib != 0 && populacao != 0)
+    {
+        return (pib * 1e9) / (double)populacao;
+    }
+    else
+    {
+        printf("O valor de área e população não pode ser zero!");
+        return 0.0;
+    }
 }
 
 double calcularDensidadePopulacional2()
 {
-    return (double)populacao2 / area2;
+    if (area2 != 0 && populacao2 != 0)
+    {
+        return (double)populacao2 / area2;
+    }
+    else
+    {
+        printf("O valor de área e população não pode ser zero!");
+        return 0.0;
+    }
 }
 
 double calcularPibPerCapta2()
 {
-    return (pib2 * 1e9) / (double)populacao2;
+    if (pib2 != 0 && populacao2 != 0)
+    {
+        return (pib2 * 1e9) / (double)populacao2;
+    }
+    else
+    {
+        printf("O valor de área e população não pode ser zero!");
+        return 0.0;
+    }
 }
 
 void exibeCalculosCarta1()
