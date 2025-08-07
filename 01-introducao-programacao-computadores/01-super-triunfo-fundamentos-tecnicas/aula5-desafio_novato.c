@@ -14,14 +14,15 @@ int main()
 
     char estado;
     char codigoCarta[50], nomeCidade[50];
-    int populacao, numeroPontosTuristicos;
+    unsigned long int populacao;
+    int numeroPontosTuristicos;
     double area, pib;
 
     printf("\n***Super Trunfo - Desafio novato***\n");
 
     char estadoStr[10], populacaoStr[20], areaStr[20], pibStr[20], pontosStr[20];
 
-    printf("\nDigite abaixo os dados da segunda carta:");
+    printf("\nDigite abaixo os dados da primeira carta:");
 
     printf("\nEstado: ");
     readLine(estadoStr, sizeof(estadoStr));
@@ -35,7 +36,7 @@ int main()
 
     printf("População: ");
     readLine(populacaoStr, sizeof(populacaoStr));
-    sscanf(populacaoStr, "%d", &populacao);
+    sscanf(populacaoStr, "%lu", &populacao);
 
     printf("Área: ");
     readLine(areaStr, sizeof(areaStr));
@@ -51,7 +52,8 @@ int main()
 
     char estado2;
     char codigoCarta2[50], nomeCidade2[50];
-    int populacao2, numeroPontosTuristicos2;
+    unsigned long int populacao2;
+    int numeroPontosTuristicos2;
     double area2, pib2;
 
     char estadoStr2[10], populacaoStr2[20], areaStr2[20], pibStr2[20], pontosStr2[20];
@@ -70,7 +72,7 @@ int main()
 
     printf("População: ");
     readLine(populacaoStr2, sizeof(populacaoStr2));
-    sscanf(populacaoStr2, "%d", &populacao2);
+    sscanf(populacaoStr2, "%lu", &populacao2);
 
     printf("Área: ");
     readLine(areaStr2, sizeof(areaStr2));
@@ -90,7 +92,7 @@ int main()
     printf("\nEstado: %c", estado);
     printf("\nCódigo da Carta: %s", codigoCarta);
     printf("\nNome da Cidade: %s", nomeCidade);
-    printf("\nPopulação: %d", populacao);
+    printf("\nPopulação: %lu", populacao);
     printf("\nÁrea: %.2f km²", area);
     printf("\nPIB: %.2f bilhões de reais", pib);
     printf("\nNúmero de Pontos Turísticos: %d\n", numeroPontosTuristicos);
@@ -99,10 +101,10 @@ int main()
     printf("\nEstado: %c", estado2);
     printf("\nCódigo da Carta: %s", codigoCarta2);
     printf("\nNome da Cidade: %s", nomeCidade2);
-    printf("\nPopulação: %d", populacao2);
+    printf("\nPopulação: %lu", populacao2);
     printf("\nÁrea: %.2f km²", area2);
     printf("\nPIB: %.2f bilhões de reais", pib2);
-    printf("\nNúmero de Pontos Turísticos: %d", numeroPontosTuristicos2);
+    printf("\nNúmero de Pontos Turísticos: %d\n", numeroPontosTuristicos2);
 
     return 0;
 }
