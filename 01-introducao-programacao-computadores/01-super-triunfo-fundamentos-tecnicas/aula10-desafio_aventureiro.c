@@ -18,7 +18,8 @@ void readLine(char *buffer, int size)
     }
 }
 
-void entradaDados() {
+void entradaDados()
+{
     printf("\nDigite abaixo os dados da primeira carta:");
 
     printf("\nEstado: ");
@@ -78,23 +79,28 @@ void entradaDados() {
     printf("\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
 }
 
-double calcularDensidadePopulacional() {
-    return (double) populacao / area;
+double calcularDensidadePopulacional()
+{
+    return (double)populacao / area;
 }
 
-double calcularPibPerCapta() {
-    return (pib * 1e9) / (double) populacao;
+double calcularPibPerCapta()
+{
+    return (pib * 1e9) / (double)populacao;
 }
 
-double calcularDensidadePopulacional2() {
-    return (double) populacao2 / area2;
+double calcularDensidadePopulacional2()
+{
+    return (double)populacao2 / area2;
 }
 
-double calcularPibPerCapta2() {
-    return (pib2 * 1e9) / (double) populacao2;
+double calcularPibPerCapta2()
+{
+    return (pib2 * 1e9) / (double)populacao2;
 }
 
-void exibeCalculosCarta1() {
+void exibeCalculosCarta1()
+{
     densidadePopulacional = calcularDensidadePopulacional();
     pibPerCapta = calcularPibPerCapta();
 
@@ -103,17 +109,18 @@ void exibeCalculosCarta1() {
     printf("\n");
 }
 
-void exibeCalculosCarta2() {
+void exibeCalculosCarta2()
+{
     densidadePopulacional2 = calcularDensidadePopulacional2();
     pibPerCapta2 = calcularPibPerCapta2();
 
-    
     printf("Densidade Populacional:  %.2lf hab/km²", densidadePopulacional2);
     printf("\nPIB per Capita:  %.2lf reais", pibPerCapta2);
     printf("\n");
 }
 
-void saidaDados() {
+void saidaDados()
+{
     printf("\nPrimeira carta:");
     printf("\nEstado: %c", estado);
     printf("\nCódigo da Carta: %s", codigoCarta);
@@ -123,7 +130,7 @@ void saidaDados() {
     printf("\nPIB: %.2lf bilhões de reais", pib);
     printf("\nNúmero de Pontos Turísticos: %d\n", numeroPontosTuristicos);
     exibeCalculosCarta1();
-    
+
     printf("\nSegunda carta:");
     printf("\nEstado: %c", estado2);
     printf("\nCódigo da Carta: %s", codigoCarta2);
