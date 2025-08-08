@@ -3,14 +3,16 @@
 float temperatura, umidade, temperaturaMaxima = 25.0, umidadeMaxima = 70.0;
 unsigned int estoque, estoqueMinimo = 100;
 
-void informativo() {
+void informativo()
+{
     printf("\n~*~*~*~ VALORES SEGUROS: ~*~*~*~\n");
     printf("\nTemperatura máxima: %.1f graus célcius\n", temperaturaMaxima);
     printf("\nUmidade máxima: %.1f\n", umidadeMaxima);
     printf("\nEstoque mínimo:  %d\n", estoqueMinimo);
 }
 
-void entradaDados() {
+void entradaDados()
+{
     printf("\nDigite a temperatura atual:  ");
     scanf("%f", &temperatura);
 
@@ -21,36 +23,41 @@ void entradaDados() {
     scanf("%d", &estoque);
 }
 
-void saidaDados() {
+void saidaDados()
+{
     if (temperatura > temperaturaMaxima)
     {
         printf("\nTemperatura atual está em %.1f graus célcius, está acima de %.1f graus célcius e excede o valor máximo. Atenção!", temperatura, temperaturaMaxima);
-    } else
-    {
-        printf("\nTemperatura atual dentro dos conformes! (%.1f)", temperatura);
     }
-    
+    else
+    {
+        printf("\nTemperatura atual dentro dos parâmetros! (%.1f)", temperatura);
+    }
+
     if (umidade > umidadeMaxima)
     {
         printf("\nUmidade atual está em %.1f, está acima de %.1f e excede o valor máximo. Atenção!", umidade, umidadeMaxima);
-    } else
-    {
-        printf("\nUmidade atual dentro dos conformes! (%.1f)", umidade);
     }
-    
+    else
+    {
+        printf("\nUmidade atual dentro dos parâmetros! (%.1f)", umidade);
+    }
+
     if (estoque < estoqueMinimo)
     {
         printf("\nEstoque atual em %d está abaixo do mínimo sugerido de %d. Atenção!", estoque, estoqueMinimo);
-    } else
+    }
+    else
     {
-        printf("\nEstoque atual dentro dos conformes! (%d)", estoque);
-    }   
+        printf("\nEstoque atual dentro dos parâmetros! (%d)", estoque);
+    }
 }
 
-int main() {
+int main()
+{
     informativo();
     entradaDados();
     saidaDados();
-    //minuto 6:00 hora de codar novato
+
     return 0;
 }
