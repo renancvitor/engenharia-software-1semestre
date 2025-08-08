@@ -191,13 +191,13 @@ void saidaDados()
     printf("\nNúmero de Pontos Turísticos: %d\n", numeroPontosTuristicos2);
     exibeCalculosCarta2();
 
-    printf("População: Carta %d venceu (%d)\n", populacao > populacao2 ? 1 : 2, populacao > populacao2 ? 1 : 0);
-    printf("Área: Carta %d venceu (%d)\n", area > area2 ? 1 : 2, area > area2 ? 1 : 0);
-    printf("PIB: Carta %d venceu (%d)\n", pib > pib2 ? 1 : 2, pib > pib2 ? 1 : 0);
-    printf("Pontos Turísticos: Carta %d venceu (%d)\n", numeroPontosTuristicos > numeroPontosTuristicos2 ? 1 : 2, numeroPontosTuristicos > numeroPontosTuristicos2 ? 1 : 0);
-    printf("Densidade Populacional: Carta %d venceu (%d)\n", densidadePopulacional < densidadePopulacional2 ? 1 : 2, densidadePopulacional < densidadePopulacional2 ? 1 : 0); // quanto menor, melhor
-    printf("PIB per Capita: Carta %d venceu (%d)\n", pibPerCapta > pibPerCapta2 ? 1 : 2, pibPerCapta > pibPerCapta2 ? 1 : 0);
-    printf("Super Poder: Carta %d venceu (%d)\n", superPoderCarta1() > superPoderCarta2() ? 1 : 2, superPoderCarta1() > superPoderCarta2() ? 1 : 0);
+    printf("\nPopulação: %s carta venceu (%d)\n", populacao > populacao2 ? "Primeira" : "Segunda", populacao > populacao2);
+    printf("Área: %s carta venceu (%d)\n", area > area2 ? "Primeira" : "Segunda", area > area2);
+    printf("PIB: %s carta venceu (%d)\n", pib > pib2 ? "Primeira" : "Segunda", pib > pib2 ? 1 : 0);
+    printf("Pontos Turísticos: %s carta venceu (%d)\n", numeroPontosTuristicos > numeroPontosTuristicos2 ? "Primeira" : "Segunda", numeroPontosTuristicos > numeroPontosTuristicos2);
+    printf("Densidade Populacional: %s carta venceu (%d)\n", densidadePopulacional < densidadePopulacional2 ? "Primeira" : "Segunda", densidadePopulacional < densidadePopulacional2); // quanto menor, melhor
+    printf("PIB per Capita: %s carta venceu (%d)\n", pibPerCapta > pibPerCapta2 ? "Primeira" : "Segunda", pibPerCapta > pibPerCapta2);
+    printf("Super Poder: %s carta venceu (%d)\n", superPoderCarta() > superPoderCarta2() ? "Primeira" : "Segunda", superPoderCarta() > superPoderCarta2());
 }
 
 int main()
