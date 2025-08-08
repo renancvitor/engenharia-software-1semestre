@@ -180,6 +180,7 @@ void saidaDados()
     printf("\nPIB: %.2lf bilhões de reais", pib);
     printf("\nNúmero de Pontos Turísticos: %d\n", numeroPontosTuristicos);
     exibeCalculosCarta1();
+    printf("Super Poder primeira carta:  %.2lf\n", superPoderCarta());
 
     printf("\nSegunda carta:");
     printf("\nEstado: %c", estado2);
@@ -190,6 +191,7 @@ void saidaDados()
     printf("\nPIB: %.2lf bilhões de reais", pib2);
     printf("\nNúmero de Pontos Turísticos: %d\n", numeroPontosTuristicos2);
     exibeCalculosCarta2();
+    printf("Super Poder segunda carta:  %.2lf\n", superPoderCarta2());
 
     printf("\nPopulação: %s carta venceu (%d)\n", populacao > populacao2 ? "Primeira" : "Segunda", populacao > populacao2);
     printf("Área: %s carta venceu (%d)\n", area > area2 ? "Primeira" : "Segunda", area > area2);
