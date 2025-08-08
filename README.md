@@ -43,8 +43,16 @@ engenharia-software-2semestre/
 │   │   ├── aula2-variaveis.c
 │   │   ├── aula3-input_output_dados.c
 │   │   ├── aula4-hora_de_codar.c
-│   │   └── aula5-desafio_novato.c
+│   │   ├── aula5-desafio_novato.c
+│   │   ├── aula6-conceito_solucao_estruturada.c
+│   │   ├── aula7-operadores_matematicos.c
+│   │   ├── aula8-manipulacao_conversao_tipos_dados.c
+│   │   ├── aula9-hora_de_codar_media_nota.c
+│   │   ├── aula10-desafio_aventureiro.c
+│   │   ├── aula11-hora_de_codar.c
+│   │   └── aula12-desafio_mestre.c
 │   ├── 02-super-triunfo-desenvolvendo-logica/
+│   │   └── aula1-estrutura_decisao_simples.c
 │   ├── 03-xadrez-movimentacao-pecas/
 │   └── 04-batalha-naval/
 ├── 02-arquitetura-computadores/
